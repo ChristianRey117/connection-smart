@@ -1,0 +1,7 @@
+{
+  "name": "connection-smart",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
