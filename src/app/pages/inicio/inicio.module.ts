@@ -4,20 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FolderPageRoutingModule } from './folder-routing.module';
+import { InicioPageRoutingModule } from './inicio-routing.module';
 
-import { FolderPage } from './folder.page';
-
-import { CardComponent } from '../components/card/card.component';
+import { InicioPage } from './inicio.page';
+import { CardComponent } from 'src/app/components/card/card.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FolderPageRoutingModule,
+    InicioPageRoutingModule,
     CardComponent,
   ],
-  declarations: [FolderPage],
+  declarations: [InicioPage],
 })
-export class FolderPageModule {}
+export class InicioPageModule {}
