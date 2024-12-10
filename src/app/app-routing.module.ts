@@ -5,22 +5,31 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'folder/Inicio',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },  {
+    loadChildren: () =>
+      import('./folder/folder.module').then((m) => m.FolderPageModule),
+  },
+  {
     path: 'inicio',
-    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
-  }
-
+    loadChildren: () =>
+      import('./pages/inicio/inicio.module').then((m) => m.InicioPageModule),
+  },
+  {
+    path: 'froggy',
+    loadChildren: () =>
+      import('./pages/froggy-game/froggy-game.module').then(
+        (m) => m.FroggyGameModule
+      ),
+  },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
