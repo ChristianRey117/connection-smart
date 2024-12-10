@@ -10,6 +10,11 @@ export class AppComponent {
     { title: 'Servicios', url: '/folder/outbox', icon: 'paper-plane' },
     { title: 'Quienes somos?', url: '/folder/favorites', icon: 'heart' },
     { title: 'Contacto', url: '/folder/archived', icon: 'mail' },
+    {
+      title: 'Froggy',
+      url: '/froggy',
+      icon: 'heart',
+    },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
